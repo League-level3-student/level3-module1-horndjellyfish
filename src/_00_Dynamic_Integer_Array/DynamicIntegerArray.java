@@ -79,9 +79,19 @@ public class DynamicIntegerArray {
 	//9. Complete the steps in the remove method
 	public void remove(int location) {
 		//A. create a new array that is one element smaller than the member array
-		
+		Integer[] digits = new Integer[numbers.length - 1];
 		//B. make a for loop to iterate through the member array
-		
+		for (int i = 0; i < numbers.length; i++) {
+			if (i < location) {
+				digits[i] = numbers[i];
+			}
+			else if (i > location) {
+				digits[i-1] = numbers[i];
+			}
+			else {
+				continue;
+			}
+		}
 			//C. if i  is less than location
 			//		set the element at i of the new array to the element at i of the member array
 			
@@ -91,18 +101,21 @@ public class DynamicIntegerArray {
 			//E. else, continue;
 			
 		//F. set the member array equal to the new array
+		numbers = digits;
 	}
 	
 	//10. Run the tests again the see if you are correct so far
 	
 	//11. Complete the size method so that it returns the length of the member array.
 	public int size() {
-		return 0;
+		return numbers.length;
 	}
 	
 	//12. Complete the clear array so that it sets the member array 
 	//    equal to a new integer array of size 0
+	Integer[] asdf = new Integer[0];
 	public void clear() {
+		numbers = asdf;
 	}
 	
 	//13. Run the test again to see if you are finished.
