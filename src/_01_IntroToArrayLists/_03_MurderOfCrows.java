@@ -1,98 +1,100 @@
 package _01_IntroToArrayLists;
 
-/** Copyright The League of Amazing Programmers 2013-2017
- *    Level 3
- *    A Murder of Crows
- *    Duration=.00
- *    Platform=Eclipse
- *    Type=Recipe
- *    Objectives=n/a
-*/
+/**
+ * Copyright The League of Amazing Programmers 2013-2017
+ * Level 3
+ * A Murder of Crows
+ * Duration=.00
+ * Platform=Eclipse
+ * Type=Recipe
+ * Objectives=n/a
+ */
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import javax.swing.JOptionPane;
-
 public class _03_MurderOfCrows {
 
-	ArrayList<Crow> theMurder = new ArrayList<Crow>();
-//	ArrayList<String> stomachContents;
+    ArrayList<Crow> theMurder = new ArrayList<Crow>();
+    int innocentDead = 0;
 
-	public static void main(String[] args) {
-		_03_MurderOfCrows murderOfCrows = new _03_MurderOfCrows();
-		murderOfCrows.initializeCrows();
-		murderOfCrows.findTheDiamond();
-	}
+    public static void main(String[] args) {
+        _03_MurderOfCrows murderOfCrows = new _03_MurderOfCrows();
+        murderOfCrows.initializeCrows();
+        murderOfCrows.findTheDiamond();
+    }
 
-	private void findTheDiamond() {
-		/*
-		 * 1. One of the Crows has eaten the diamond. You need to search through the
-		 * stomach of each Crow, then print the name of the guilty Crow.
-		 */
-		for (Crow crow : theMurder) {
-			for (String stuffEaten : crow.getStomachContents()) {
-				if (stuffEaten.equals("diamond")) {
-					System.out.println(crow.getName());
-				} else {
-					System.out.println("Innocent crows: " + crow.getName());
-				}
-			}
+    private void findTheDiamond() {
+        /*
+         * 1. One of the Crows has eaten the diamond. You need to search through the
+         * stomach of each Crow, then print the name of the guilty Crow.
+         */
+        boolean diamondFound = false;
+        for (Crow crow : theMurder) {
+            for (String stuffEaten : crow.getStomachContents()) {
+                if (stuffEaten.equals("diamond")) {
+                    System.out.println(crow.getName() + " ate the diamond");
+                    diamondFound = true;
+                }
+            }
+            if (!diamondFound) {
+                innocentDead++;
+                diamondFound = false;
+            }
+        }
+        /* 2. How many innocent crows had to die before the diamond was found? */
+        System.out.println("Innocent crows dead: " + innocentDead);
+    }
 
-			/* 2. How many innocent crows had to die before the diamond was found? */
+    private void initializeCrows() {
+        theMurder.add(new Crow("Rok"));
+        theMurder.add(new Crow("Merle"));
+        theMurder.add(new Crow("Poe"));
+        theMurder.add(new Crow("Grenwyn"));
+        theMurder.add(new Crow("Crawford"));
+        hideTheDiamond();
+    }
 
-		}
-	}
+    private void hideTheDiamond() {
+        int randomness = new Random().nextInt(theMurder.size());
+        theMurder.get(randomness).getStomachContents().add("diamond");
+    }
 
-	private void initializeCrows() {
-		theMurder.add(new Crow("Rok"));
-		theMurder.add(new Crow("Merle"));
-		theMurder.add(new Crow("Poe"));
-		theMurder.add(new Crow("Grenwyn"));
-		theMurder.add(new Crow("Crawford"));
-		hideTheDiamond();
-	}
+    class Crow {
+        private String name;
+        private ArrayList<String> stomachContents = new ArrayList<String>();
 
-	private void hideTheDiamond() {
-		int randomness = new Random().nextInt(theMurder.size());
-		theMurder.get(randomness).getStomachContents().add("diamond");
-	}
+        public Crow(String name) {
+            this.name = name;
+            fillCrowsStomach();
+        }
 
-	class Crow {
-		private String name;
-		private ArrayList<String> stomachContents = new ArrayList<String>();
+        private void fillCrowsStomach() {
+            for (int i = 0; i < 10; i++)
+                this.stomachContents.add(getRandomCrowFood());
+        }
 
-		public Crow(String name) {
-			this.name = name;
-			fillCrowsStomach();
-		}
+        private String getRandomCrowFood() {
+            int randomness = new Random().nextInt(4);
+            if (randomness == 0)
+                return "carrion";
+            else if (randomness == 1)
+                return "snail";
+            else if (randomness == 2)
+                return "acorn";
+            else if (randomness == 3)
+                return "spider";
+            else
+                return "grub";
+        }
 
-		private void fillCrowsStomach() {
-			for (int i = 0; i < 10; i++)
-				this.stomachContents.add(getRandomCrowFood());
-		}
+        public String getName() {
+            return name;
+        }
 
-		private String getRandomCrowFood() {
-			int randomness = new Random().nextInt(4);
-			if (randomness == 0)
-				return "carrion";
-			else if (randomness == 1)
-				return "snail";
-			else if (randomness == 2)
-				return "acorn";
-			else if (randomness == 3)
-				return "spider";
-			else
-				return "grub";
-		}
+        public ArrayList<String> getStomachContents() {
+            return stomachContents;
+        }
 
-		public String getName() {
-			return name;
-		}
-
-		public ArrayList<String> getStomachContents() {
-			return stomachContents;
-		}
-
-	}
+    }
 }
