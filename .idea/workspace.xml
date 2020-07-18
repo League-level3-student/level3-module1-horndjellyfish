@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d7f84fb-97e8-453c-8c2c-6710f82c9eb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level3-Module1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Level3-Module1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_03_MurderOfCrows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_03_MurderOfCrows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_04_RemovingStuffFromArrayLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_04_RemovingStuffFromArrayLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_05_LongChipCompetition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_05_LongChipCompetition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -51,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Application._04_RemovingStuffFromArrayLists">
+  <component name="RunManager" selected="Application._05_LongChipCompetition">
     <configuration name="_02_GuestBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_01_IntroToArrayLists._02_GuestBook" />
       <module name="Level3-Module1" />
@@ -91,8 +90,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_05_LongChipCompetition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_01_IntroToArrayLists._05_LongChipCompetition" />
+      <module name="Level3-Module1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_01_IntroToArrayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._05_LongChipCompetition" />
         <item itemvalue="Application._04_RemovingStuffFromArrayLists" />
         <item itemvalue="Application._03_MurderOfCrows" />
         <item itemvalue="Application._02_GuestBook" />
@@ -122,36 +135,37 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1592673095528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592673095528" />
-    <state width="1382" height="140" key="GridCell.Tab.0.bottom" timestamp="1594494623407">
+    <state width="1382" height="140" key="GridCell.Tab.0.bottom" timestamp="1595094239759">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1594487522982" />
     <state width="1398" height="220" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1594489604212" />
-    <state width="1382" height="140" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1594494623407" />
-    <state width="1382" height="140" key="GridCell.Tab.0.center" timestamp="1594494623407">
+    <state width="1382" height="140" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1595094239759" />
+    <state width="1382" height="140" key="GridCell.Tab.0.center" timestamp="1595094239758">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1594487522980" />
     <state width="1398" height="220" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1594489604211" />
-    <state width="1382" height="140" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1594494623407" />
-    <state width="1382" height="140" key="GridCell.Tab.0.left" timestamp="1594494623406">
+    <state width="1382" height="140" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1595094239758" />
+    <state width="1382" height="140" key="GridCell.Tab.0.left" timestamp="1595094239758">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1594487522979" />
     <state width="1398" height="220" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1594489604210" />
-    <state width="1382" height="140" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1594494623406" />
-    <state width="1382" height="140" key="GridCell.Tab.0.right" timestamp="1594494623407">
+    <state width="1382" height="140" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1595094239758" />
+    <state width="1382" height="140" key="GridCell.Tab.0.right" timestamp="1595094239759">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1594487522981" />
     <state width="1398" height="220" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1594489604212" />
-    <state width="1382" height="140" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1594494623407" />
+    <state width="1382" height="140" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1595094239759" />
     <state x="196" y="23" key="SettingsEditor" timestamp="1594487449699">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -161,11 +175,11 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="417" y="320" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.797@0.23.1440.797" timestamp="1594486661302" />
-    <state x="385" y="150" width="670" height="693" key="search.everywhere.popup" timestamp="1594492940686">
+    <state x="385" y="150" width="670" height="693" key="search.everywhere.popup" timestamp="1595095126355">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="385" y="147" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1594488268085" />
     <state x="385" y="147" width="670" height="676" key="search.everywhere.popup/0.23.1440.800@0.23.1440.800" timestamp="1594489395528" />
-    <state x="385" y="150" width="670" height="693" key="search.everywhere.popup/0.23.1440.819@0.23.1440.819" timestamp="1594492940686" />
+    <state x="385" y="150" width="670" height="693" key="search.everywhere.popup/0.23.1440.819@0.23.1440.819" timestamp="1595095126355" />
   </component>
 </project>
