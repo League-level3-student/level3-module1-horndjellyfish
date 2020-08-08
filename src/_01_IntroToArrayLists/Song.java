@@ -22,6 +22,7 @@ public class Song {
 	Song("http://freedownloads.last.fm/download/569264057/Get%2BGot.mp3"); * </code>
 	 */
 	public Song(String songAddress) {
+		//new Song ("greySeal.mp3").play();
 		this.songAddress = songAddress;
 	}
 

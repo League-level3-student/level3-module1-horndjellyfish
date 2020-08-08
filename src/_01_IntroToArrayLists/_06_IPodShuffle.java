@@ -1,15 +1,12 @@
 package _01_IntroToArrayLists;
 
-import java.util.ArrayList;
-import java.util.Random;
-
 
 //Copyright The League of Amazing Programmers, 2015
 
 public class _06_IPodShuffle{
 	public _06_IPodShuffle() {
 		// 1. Use the Song class the play the demo.mp3 file.
-				
+		new Song ("grey_seal.mp3").play();
 				
 		/**
 		 * 2. Congratulations on completing the sound check! * Now we want to make an
@@ -23,5 +20,6 @@ public class _06_IPodShuffle{
 	
 	public static void main(String[] args) {
 		new _06_IPodShuffle();
+
 	}
 }
