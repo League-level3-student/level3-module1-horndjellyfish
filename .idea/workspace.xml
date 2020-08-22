@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d7f84fb-97e8-453c-8c2c-6710f82c9eb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Don'tGoWastingTime.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HammerToFall.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HeadOverHeels.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SoTired.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YourStarterFor.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_06_IPodShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_IntroToArrayLists/_06_IPodShuffle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_02_Integer_Stack/IntegerStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_02_Integer_Stack/IntegerStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/greySeal.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/GreySeal.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,20 +57,7 @@
       <recent name="C:\Users\horne\Documents\GitHub\level3-module1-horndjellyfish\src\_01_IntroToArrayLists" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._06_IPodShuffle">
-    <configuration name="_02_GuestBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_01_IntroToArrayLists._02_GuestBook" />
-      <module name="Level3-Module1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_01_IntroToArrayLists.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.IntegerStackTest">
     <configuration name="_03_MurderOfCrows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_01_IntroToArrayLists._03_MurderOfCrows" />
       <module name="Level3-Module1" />
@@ -130,13 +110,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntegerStackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Level3-Module1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_02_Integer_Stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_02_Integer_Stack" />
+      <option name="MAIN_CLASS_NAME" value="_02_Integer_Stack.IntegerStackTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegerStackTest" />
         <item itemvalue="Application._06_IPodShuffle" />
         <item itemvalue="Application._05_LongChipCompetition" />
         <item itemvalue="Application._04_RemovingStuffFromArrayLists" />
         <item itemvalue="Application._03_MurderOfCrows" />
-        <item itemvalue="Application._02_GuestBook" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +166,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="525" y="355" key="#Notifications/0.0.1280.984@0.0.1280.984" timestamp="1596841540714" />
+    <state x="100" y="100" width="1076" height="784" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598118775006">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="100" y="100" width="1076" height="784" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.984@0.0.1280.984" timestamp="1598118775006" />
     <state x="386" y="284" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596911214960">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -182,31 +182,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592673095528" />
-    <state width="1216" height="262" key="GridCell.Tab.0.bottom" timestamp="1597515954553">
+    <state width="1216" height="305" key="GridCell.Tab.0.bottom" timestamp="1598120691722">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1216" height="262" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1597515954553" />
+    <state width="1216" height="305" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1598120691722" />
     <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1594487522982" />
     <state width="1398" height="220" key="GridCell.Tab.0.bottom/0.23.1440.800@0.23.1440.800" timestamp="1594489604212" />
     <state width="1382" height="140" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1595094239759" />
-    <state width="1216" height="262" key="GridCell.Tab.0.center" timestamp="1597515954553">
+    <state width="1216" height="305" key="GridCell.Tab.0.center" timestamp="1598120691721">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1216" height="262" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1597515954553" />
+    <state width="1216" height="305" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1598120691721" />
     <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1594487522980" />
     <state width="1398" height="220" key="GridCell.Tab.0.center/0.23.1440.800@0.23.1440.800" timestamp="1594489604211" />
     <state width="1382" height="140" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1595094239758" />
-    <state width="1216" height="262" key="GridCell.Tab.0.left" timestamp="1597515954553">
+    <state width="1216" height="305" key="GridCell.Tab.0.left" timestamp="1598120691721">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1216" height="262" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1597515954553" />
+    <state width="1216" height="305" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1598120691721" />
     <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1594487522979" />
     <state width="1398" height="220" key="GridCell.Tab.0.left/0.23.1440.800@0.23.1440.800" timestamp="1594489604210" />
     <state width="1382" height="140" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1595094239758" />
-    <state width="1216" height="262" key="GridCell.Tab.0.right" timestamp="1597515954553">
+    <state width="1216" height="305" key="GridCell.Tab.0.right" timestamp="1598120691721">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1216" height="262" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1597515954553" />
+    <state width="1216" height="305" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1598120691721" />
     <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1594487522981" />
     <state width="1398" height="220" key="GridCell.Tab.0.right/0.23.1440.800@0.23.1440.800" timestamp="1594489604212" />
     <state width="1382" height="140" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1595094239759" />
