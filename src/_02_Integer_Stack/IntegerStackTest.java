@@ -12,11 +12,11 @@ class IntegerStackTest {
 		is.push(0);
 		is.push(1);
 		is.push(2);
-//		is.push(3);
-//		is.push(4);
+		is.push(3);
+		is.push(4);
 		
-		//assertEquals(4, is.pop());
-//		assertEquals(3, is.pop());
+		assertEquals(4, is.pop());
+		assertEquals(3, is.pop());
 		assertEquals(2, is.pop());
 		assertEquals(1, is.pop());
 		assertEquals(0, is.pop());
