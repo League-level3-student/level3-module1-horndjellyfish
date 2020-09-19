@@ -21,7 +21,7 @@ public class _02_TextUndoRedo implements KeyListener {
      * */
     JFrame frame = new JFrame();
     JPanel panel = new JPanel();
-    JLabel label = new JLabel("something is here");
+    JLabel label = new JLabel();
     char something;
     char[] asdf;
     Stack<Character> input = new Stack<Character>();
@@ -43,17 +43,17 @@ public class _02_TextUndoRedo implements KeyListener {
 
     }
 
-    public void updateLabel(char c) {
-        String text = Character.toString(c);
-        label.setText(text);
-        frame.revalidate();
-    }
-
+    // update the label by adding text that was typed by user
     public void updateLabel(Stack<Character> c) {
-        label.setText(stackToString());
+        String s = stackToString();
+        label.setText(s);
         frame.revalidate();
     }
 
+    public void refreshLabel() {
+        updateLabel(input);
+    }
+    // converts the stack input to a string to be able to set the label's text to the stack input
     public String stackToString() {
         asdf = new char[input.size()];
         for (int i = 0; i < input.size(); i++) {
@@ -65,11 +65,24 @@ public class _02_TextUndoRedo implements KeyListener {
 
     public void keyTyped(KeyEvent e) {
         something = e.getKeyChar();
-        updateLabel(something);
-        updateLabel(input);
-        input.add(something);
-        else if (e.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
-            deleted.add(something);
+        // after getting the key, update the label with the new key
+        // check to see if key was backspace, if so, delete the character typed before it and save it to another stack
+        // if not backspace, update the label with the key
+
+        if (something == KeyEvent.VK_BACK_SPACE) {
+            // delete the last character typed and save it to the "deleted" stack
+            char removed = input.pop();
+            deleted.push(removed);
+            refreshLabel();
+
+        } else if (something == KeyEvent.VK_BACK_SLASH) {
+            // pop the deleted stack and update the label with the popped off character
+            input.push(deleted.pop());
+            refreshLabel();
+        } else {
+            // update the label with the key typed
+            input.push(something);
+            refreshLabel();
         }
     }
 
