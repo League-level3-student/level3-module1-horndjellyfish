@@ -1,12 +1,11 @@
 package _04_HangMan;
 
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
-
-import javax.swing.JOptionPane;
 
 public class Utilities {
 	public static String readRandomLineFromFile(String filename) {
