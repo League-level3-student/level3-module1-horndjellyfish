@@ -10,10 +10,13 @@ import java.util.Stack;
 public class HangMan implements KeyListener {
     Stack<String> lines = new Stack<String>();
     JLabel label = new JLabel();
+    JLabel livesLabel = new JLabel();
+    JPanel panel1 = new JPanel();
     JFrame frame;
     char[] hangmanDisplayWord;
     char[] hiddenWord;
     char input;
+    int livesLeft = 6;
 
     public static void main(String[] args) {
         HangMan hm = new HangMan();
@@ -38,50 +41,88 @@ public class HangMan implements KeyListener {
         hangmanDisplayWord = word.toCharArray();
         hiddenWord = word.toCharArray();
         String display = "";
-        System.out.println(word);
+        //System.out.println(word);
         char lines = '_';
         for (int i = 0; i < hangmanDisplayWord.length; i++) {
             hangmanDisplayWord[i] = lines;
             display = display + hangmanDisplayWord[i] + " ";
         }
-        Font font = new Font("Courier", Font.BOLD, 12);
-        label.setFont(font);
         label.setText(display);
+        livesLabel.setText("lives left: " + livesLeft);
+        panel1.setLayout(new BorderLayout());
+        panel1.add(label);
+        panel1.add(livesLabel, BorderLayout.NORTH);
         frame = new JFrame();
         frame.setVisible(true);
         frame.setSize(300, 300);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.addKeyListener(this);
-        frame.add(label);
-        //frame.pack();
+        frame.add(panel1);
         guessLetter();
     }
 
     public void setText(char[] word) {
         String display = "";
-        for (int i = 0; i < word.length; i++) {
-            display = display + word[i] + " ";
+        for (char c : word) {
+            display = display + c + " ";
         }
         label.setText(display);
     }
 
+    public boolean wordCompleted() {
+        boolean complete = false;
+        if (!(new String(hangmanDisplayWord).contains("_"))) {
+            complete = true;
+        }
+        return complete;
+    }
+
+    public boolean stillAlive() {
+        boolean alive = true;
+        if (livesLeft <= 0) {
+            alive = false;
+        }
+        return alive;
+    }
+
     public void guessLetter() {
-        String inp = JOptionPane.showInputDialog("Guess a letter.");
-        input = inp.charAt(0);
-        ArrayList<Integer> newMatches = findMatches(input);
-        if (newMatches.size() > 0) {
-            populateLetters(newMatches, input);
-            setText(hangmanDisplayWord);
-        } else {
-            // take off a life
+        while (!gameOver()) {
+            String inp = JOptionPane.showInputDialog("Guess a letter.");
+            input = inp.charAt(0);
+            ArrayList<Integer> newMatches = findMatches(input);
+            if (newMatches.size() > 0) {
+                populateLetters(newMatches, input);
+                setText(hangmanDisplayWord);
+            } else {
+                takeOffLife();
+            }
         }
     }
 
+    public void takeOffLife() {
+        livesLeft--;
+        livesLabel.setText("lives left: " + livesLeft);
+    }
+
+    public boolean gameOver() {
+        boolean endgame = false;
+        if (wordCompleted()) {
+            endgame = true;
+            frame.dispose();
+            JOptionPane.showMessageDialog(null, "YOU WON!!!!! CONGRATULATIONS!!!");
+        } else if (!stillAlive()) {
+            endgame = true;
+            frame.dispose();
+            JOptionPane.showMessageDialog(null, "GAME OVER! :(");
+        }
+
+        return endgame;
+    }
+
     public void populateLetters(ArrayList<Integer> matches, char letter) {
-       for (int i = 0; i < matches.size(); i++) {
-            int small = matches.get(i).intValue();
+        for (int small : matches) {
             hangmanDisplayWord[small] = letter;
-       }
+        }
     }
 
     public ArrayList<Integer> findMatches(char letter) {
